@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 1</title>
+</head>
+<body>
+
+    <div id="divRellenar"></div>
+
+    <script>
+        "use strict";
+        let nombre = "";
+        let edad = 0;
+        let ciudad = "";
+
+        nombre = prompt("Introduce tu nombre");
+        edad = parseInt(prompt("Introduce tu edad"));
+        ciudad = prompt("Introduce tu ciudad");
+
+        document.getElementById("divRellenar").innerHTML = `<p>Hola, me llamo 
+        ${nombre}, tengo ${edad} años y vivo en ${ciudad}</p>`
+
+    </script>
+</body>
+</html>

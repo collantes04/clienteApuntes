@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 5</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <script>
+        "use strict";
+        let producto = prompt("Introduce el nombre del producto");
+        let precio = parseInt(prompt("Introduce el precio"));
+        let cantidad = parseInt(prompt("Introduce la cantidad"));
+        document.getElementById("div1").innerHTML = `<p>Producto: ${producto},
+            Precio: ${precio}€, Stock: ${cantidad}</p`
+    </script>
+</body>
+</html>

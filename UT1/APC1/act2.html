@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 2</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <script>
+        "use strict";
+        let modulo  = "";
+        let profesor = "";
+        let alumnos = 0;
+
+        modulo = prompt("Introduce el nombre del modulo");
+        profesor = prompt("Introduce el nombre del profesor");
+        alumnos = parseInt(prompt("Introduce el numero de alumnos"));
+
+        document.getElementById("div1").innerHTML = `<p>Bienvenidos al curso de ${modulo}
+            con el profesor ${profesor}. Somos ${alumnos} alumnos</p>`
+    </script>
+</body>
+</html>
