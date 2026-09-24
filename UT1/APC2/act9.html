@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 9</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let precio = parseFloat(prompt("Introduce el precio del producto")).toFixed(2);
+        let desc = parseFloat(prompt("Introduce el descuento a aplicar")).toFixed(2);
+        let descCalculado = (desc/100);
+        let mult = (precio*descCalculado);
+        let res = (precio-mult);
+        alert(`Precio final ${res}`);
+    </script>
+</body>
+</html>

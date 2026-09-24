@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 8</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let peso = parseInt(prompt("Introduce tu peso en kg"));
+        let altura = parseFloat(prompt("Introduce tu altura"));
+
+        let icm = (peso/(altura)**2).toFixed(2);
+        let resultado = "";
+
+        switch(true){
+            case (icm < 16.5):
+                resultado = "bajo peso severo";
+                break;
+            case (icm >= 16.5 && icm <18.5):
+                resultado = "bajo peso";
+                break;
+            case (icm>=18.5 && icm < 25):
+                resultado = "peso normal";
+            break;
+
+            case (icm >= 25 && icm <30):
+                resultado = "sobrepeso";
+            break;
+
+            default:
+                resultado = "obesidad";
+                break;
+        }
+
+        alert(`ICM: ${icm}, Clasificacion: ${resultado}`);
+    </script>
+</body>
+</html>
