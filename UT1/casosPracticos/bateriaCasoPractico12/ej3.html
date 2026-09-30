@@ -8,15 +8,12 @@
 <body>
     <script>
         function factorial(n){
-            let factorial;
-            if (factorial === 0){
-                return 0;
-            }
-            for(let i = n; i>n; i--){
-                factorial += (i*n);
+        
+            if (n === 0 || n === 1){
+                return 1;
             }
 
-            return factorial(n-1);
+            return n*factorial(n-1);
         }
         
         let n = parseInt(prompt("Introduce un numero del factorial"))
