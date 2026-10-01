@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 9</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        'use strict';
+        let cadena = '*';
+        let cuadrado = "";
+
+        for (let i = 0; i < 4; i++) {
+            cuadrado += cadena.repeat(4) + `<br>`;
+        }
+
+        document.getElementById('p1').innerHTML = cuadrado;
+    </script>
+</body>
+</html>

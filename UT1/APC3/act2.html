@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 2</title>
+</head>
+<body>
+    <h1></h1>
+    <div id="div1"></div>
+    <script>
+        'use strict';
+
+        let n = parseInt(prompt("Introduce un numero"));
+        let div = document.getElementById("div1");
+
+        for(let i = 1; i<=10; i++){
+            div.appendChild(document.createElement('p')).innerHTML = `${n} x ${i} = ${n*i}`;
+        }
+    </script>
+</body>
+</html>

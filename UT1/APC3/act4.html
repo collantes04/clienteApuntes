@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 4</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        'use strict';
+        let max = 5;
+        let maxAux = 5;
+        let str = "&nbsp;";
+        let final = "";
+        for (let i = 1; i <= max; i++) {
+            let aux = i+"";
+            final += str.repeat(maxAux) + aux.repeat(i) + `<br>`;
+            maxAux--;
+        }
+        document.getElementById('p1').innerHTML = final;
+    </script>
+</body>
+</html>

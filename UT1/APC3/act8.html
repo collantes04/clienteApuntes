@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 8</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        const cadena = 'javascript';
+        let arr = cadena.split("");
+        let contador = 0;
+        arr.forEach(letra => {
+            if(letra === 'a' || letra === 'e' || letra === 'i'
+                || letra === 'o' || letra === 'u'
+            ){
+                contador++;
+            }
+        });
+
+        alert(`${cadena} tiene ${contador} vocales`)
+    </script>
+</body>
+</html>
