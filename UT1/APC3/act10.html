@@ -10,10 +10,15 @@
     <script>
         'use strict';
         let max = 50;
+        let suma = 0;
 
-        for (let i = 0; i < array.length; i++) {
-            
+        for (let i = 0; i <=50; i++) {
+            if(i%2===0){
+                suma += i;
+            }
         }
+
+        alert("La suma de los numeros pares hasta 50 es: " + suma);
     </script>
 </body>
 </html>

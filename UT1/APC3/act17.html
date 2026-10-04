@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 17</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        let empleados = [1200, 2000, 1000, 1350, 2500];
+        let mil = 0;
+        let masDosK = 0;
+        let gastoSueldos = 0;
+
+        empleados.forEach(e => {
+            if(e >= 1000 && e<=1500 ){
+                mil++;
+            } else if(e>=2000){
+                masDosK++;
+            }
+
+            gastoSueldos += e;
+        });
+
+        alert(`Empleados que ganan entre 1000 y 1500: ${mil}\nEmpleados que ganan mas de 2000: ${masDosK}\nGasto total de la empresa en sueldos: ${gastoSueldos}`);
+    </script>
+</body>
+</html>
