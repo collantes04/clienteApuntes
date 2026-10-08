@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        const cat =  {
+            "a" : 1.10,
+            "l" : 1.21,
+            "m" : 1.04,
+            getFactor(categoria){
+                return this[categoria];
+            }
+        }
+
+        let totalSinIVA = 0;
+        let IVATotal = 0;
+        while(true){
+            let categ = prompt("Introduce la categoría del producto:\nA. Alimentacion(IVA 10%)\nL. Limpieza(IVA 21%)\nM. Medicinas(IVA 4%)\nF. Finalizar compra").toLocaleLowerCase();
+            if (categ === 'f'){
+                break;
+            }
+            let precio = parseFloat(prompt("Introduce el precio del producto"));
+            debugger;
+            let aux = (precio * cat.getFactor(categ));
+            IVATotal = (IVATotal + (aux - precio));
+            totalSinIVA = (totalSinIVA + precio);
+        }
+
+
+        alert(`=================================
+                TICKET DE COMPRA
+====================================
+    Subtotal: ${totalSinIVA.toFixed(2)}€
+    IVA: ${IVATotal.toFixed(2)}€
+    -------------------------
+    TOTAL: ${(totalSinIVA+IVATotal).toFixed(2)}€
+        `)
+    </script>
+</body>
+</html>

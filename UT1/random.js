@@ -6,7 +6,7 @@ function generarNumeros() {
 
   let min = Math.min(n1, n2);
   let max = Math.max(n1, n2)
-
+  debugger
 
   for(let i=0; i<5;i++){
     cadenaNum += Math.floor(Math.random() * (max - min) + min) + " ";
