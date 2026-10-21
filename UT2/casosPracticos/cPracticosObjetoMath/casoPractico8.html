@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Caso practico 8</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let n;
+        while(isNaN(n)){
+            n = parseFloat(prompt("Ingresa un número decimal:"));
+            if(!isNaN(n)){
+                break;
+            }
+            alert("Ingresa un número válido");
+        }
+        alert(`El número redondeado al entero más cercano es: ${Math.round(n)}`);
+    </script>
+</body>
+</html>

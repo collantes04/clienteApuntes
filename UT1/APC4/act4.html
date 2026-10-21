@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 4</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let a = parseInt(prompt("Introduce el primer lado"));
+        let b = parseInt(prompt("Introduce el segundo lado"));
+        let c = parseInt(prompt("Introduce el tercer lado"));
+        
+        if(a === b && b === c){
+            alert("Equilatero");
+        
+        } else if (a != b && b != c && a != c){
+            alert("Escaleno");
+        } else {
+            alert("Isósceles");
+        }
+    </script>
+</body>
+</html>

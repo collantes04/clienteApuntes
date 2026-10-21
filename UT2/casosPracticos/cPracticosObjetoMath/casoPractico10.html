@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Caso practico 10</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let n;
+
+        while(isNaN(n) || n === ""){
+            n = prompt("Ingresa un número de varios dígitos:");
+
+            if(!isNaN(n) && n !== ""){
+                break;
+            }
+            
+            alert("Ingresa un número valido");
+        }
+
+        let arr = n.toString().split("");
+        let total = 0;
+
+        for (let n of arr) {
+            total += parseInt(n);
+        }
+
+        alert(`La suma de los dígitos de ${n} es: ${total}`);
+    </script>
+</body>
+</html>

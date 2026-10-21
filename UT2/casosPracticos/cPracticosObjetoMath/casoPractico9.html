@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Caso practico 9</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let n;
+
+        while(isNaN(n) || n>=0){
+            n = parseInt(prompt("Ingresa un número negativo"))
+
+            if(!isNaN(n) && n<0){
+                break;
+
+            }
+            if (isNaN(n) ? alert("Error ingresa un número válido") : alert("Error el número no es negativo"));
+        }
+
+        alert(`El valor absoluto de ${n} es ${Math.abs(n)}`);
+    </script>
+</body>
+</html>

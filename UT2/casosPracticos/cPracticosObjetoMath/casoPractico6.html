@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Caso practico 6</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a = parseInt(prompt("Introduce el numero primero"));
+        let b = parseInt(prompt("Introduce el numero segundo"));
+        let max = Math.max(a,b);
+        let min = Math.min(a,b);
+
+        let rand = Math.floor(Math.random()*(max-min+1))+min;
+
+        alert(`El número random entre ${min} y ${max} es: ${rand}`);
+    </script>
+</body>
+</html>

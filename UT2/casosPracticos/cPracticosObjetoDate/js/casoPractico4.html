@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Caso Practico 4</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let fecha = prompt("Introduce una fecha (por ejemplo, año-mes-dia):");
+        let arr = fecha.split("-")
+        let date = new Date();
+        date.setFullYear(parseInt(arr[0]));
+        date.setMonth(parseInt(arr[1])-1);
+        date.setDate(parseInt(arr[2]));
+        
+        let d = date.getDay();
+        let dia;
+
+        switch (d) {
+            case 0:
+                dia = 'Domingo';
+                break;
+            case 1:
+                dia = "Lunes";
+            break;
+
+            case 2:
+                dia = "Martes";
+            break;
+
+            case 3:
+                dia = 'Miércoles';
+            break;
+
+            case 4:
+                dia = 'Jueves';
+            break;
+
+            case 5:
+                dia = 'Viernes';
+            break;
+
+            case 6:
+                dia = 'Sábados';
+            default:
+                break;
+        }
+
+        alert(`El dia de la semana para la fecha ${arr[0]}/${arr[1]}/${arr[2]} es: ${dia}`)
+    </script>
+</body>
+</html>

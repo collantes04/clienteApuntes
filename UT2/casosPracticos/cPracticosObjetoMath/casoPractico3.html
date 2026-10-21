@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Caso practico 3</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let cadena = prompt("Introduce una cadena de texto:").toLowerCase().trim();
+
+        while(!isNaN(cadena)){
+            alert("No introduzcas numeros");
+            cadena = prompt("Introduce una cadena de texto:").toLowerCase().trim();
+        }
+
+        const model = {
+            'a' : 0,
+            'e' : 0,
+            'i' : 0,
+            'o' : 0,
+            'u' : 0,
+            getVocal(c){
+                model[c]++;
+            },
+            toString(){
+                return "a: " + model.a + ", e: " + model.e + ", i: " + model.i + ", o: " + model.o + ", u: " + model.u;
+            }
+        }
+
+        for (let i = 0; i < cadena.length; i++) {
+            let c = cadena.charAt(i);
+
+            model.getVocal(c);   
+        }
+
+        alert(model.toString());
+        
+    </script>
+</body>
+</html>

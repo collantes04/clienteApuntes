@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const model = {
+            0 : 0,
+            1 : 0,
+            2 : 0,
+            getNum(n){
+                model[n]++;
+            }
+        }
+        let c = 0;
+        let max = 3;
+        let min = 0;
+        while(c <= 10){
+            model.getNum(Math.floor(Math.random() * (max-min + 1))+min);
+            c++;
+        }
+        alert(`0: ${((model[0]/c)*100).toFixed(1)}, 1: ${((model[1]/c)*100).toFixed(1)}, 2:${((model[2]/c)*100).toFixed(1)}`);
+    </script>
+</body>
+</html>

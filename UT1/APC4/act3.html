@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Antonio Sanchez Collantes - 2ºDAW">
+    <title>Actividad 3</title>
+</head>
+<body>
+
+
+    <script>
+        "use strict";
+        const pizza = ["Mozarella", "Tomate"];
+        let elect = prompt("Pizza vegetariana (V) o normal (N)").toLowerCase();
+        let tipo = "";
+        let ingrediente = "";
+
+        if(elect === "v"){
+            tipo = "vegetariana";
+            pizza.push(prompt(`Ingredientes\n----------\nTofu\nPimiento\n\nIntroduce un ingrediente`));
+        } else {
+            tipo = "normal";
+            pizza.push(prompt(`Ingredientes\n----------\nPeperoni\nJamón\nSalmón\n\nIntroduce un ingrediente`))
+        }
+
+        alert(`Pizza ${tipo}\n\n Ingredientes: ${pizza.join(", ")}`);
+    </script>
+</body>
+</html>
